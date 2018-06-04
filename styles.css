@@ -1,3 +1,41 @@
-.site-branding {
-  background-color: lightblue;
+
+/* other examples make li ==> a <anchor> with href of # */
+/* would make items blocks and might provide padding */
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  border-bottom: 1px; solid seashell;
+}
+.logo {
+  height: 50px;
+  padding-left: 10px;
+}
+.menu ul {
+  display: flex;
+	list-style-type: none;
+}
+.menu li {
+	text-decoration: underline;
+	padding: .6em 1em;
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.centered {
+  text-align: center;
+  margin-top: 69px;
 }

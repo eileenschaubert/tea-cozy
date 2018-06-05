@@ -95,14 +95,13 @@ body {
         margin: 10px 15px 10px 15px;
     }
 
+/* Footer Styles */
+footer {
+  height: 250px;
+  width: 100%;
 
-/* @media screen and (min-width: 60em) {
-    .cards {
-        margin-top: inherit;
-    }
-
-    .card {
-        flex: 0 1 calc(33% - 1em);
-        margin-bottom: 2em;
-    }
-} */
+}
+.copyright {
+  padding-left: 20px;
+  text-align: left;
+}

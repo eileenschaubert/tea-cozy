@@ -49,9 +49,10 @@ body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  background-image: url("./images/img-mission-background.jpg");
-  background-size: 1200px 700px;
-  background-position: center center;
+  background: url("./images/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  /* background-size: 1200px 700px; */
+  /* background-position: center center; */
   height: 700px;
   width: 1200px;
 }
@@ -95,6 +96,35 @@ body {
         margin: 10px 15px 10px 15px;
     }
 
+/* Location Styling */
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: url("./images/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  background-position: center center;
+
+}
+.locations h2 {
+  width: 100%;
+  vertical-align: bottom;
+}
+.location {
+  margin: 15px; 20px;
+  /* flex: 1; */
+  background-color: black;
+  opacity: 1;
+  border: 1px solid red;
+  height: 300px;
+  width: 300px;
+}
+
+address {
+  font-style: normal;
+  line-height: 3em;
+}
 /* Footer Styles */
 footer {
   height: 250px;

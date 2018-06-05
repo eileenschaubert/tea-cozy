@@ -31,15 +31,16 @@ body {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
-  background-color: lightgrey;
+  background-color: black;
   opacity: 0.9;
 }
 
 .centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  /* margin-top: 69px; */
   margin: 69px auto 0 auto;
-  padding: 0 1em;
 }
 /* add black background to text; center vertically */
 /* stretch background image to full size */
@@ -51,72 +52,51 @@ body {
   background-image: url("./images/img-mission-background.jpg");
   background-size: 1200px 700px;
   background-position: center center;
-  /* height: 700px; */
-  /* width: 1200px; */
+  height: 700px;
+  width: 1200px;
 }
 
 /* Tea of the Month section */
 .month {
-  /* display: flex;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between; */
-  border: 5px solid red;
-  max-width: 1000px;
+  width: 1000px;
 }
-/* .feature-box {
-  border: 1px solid green;
-} */
 
 /* Working on card styles */
-.card {
-	background: white;
-	/* margin-bottom: 2em; */
-}
 
 .card a {
-	color: black;
+  color: seashell;
 	text-decoration: none;
-}
-
-.card a:hover {
-	/* box-shadow: 3px 3px 8px hsl(0, 0%, 70%); */
-}
-
-.card-content {
-	/* padding: 1.4em; */
-}
-
-.card-content p {
-	margin-top: 0;
-	/* margin-bottom: .5em; */
-	font-weight: normal;
+  /* margin: 0; */
 }
 
 /* can't get the images to fit within the card - shouldn't have to hard set size */
 .thumbnail img {
   height: 200px;
   width: 300px;
-  flex: 1;
 }
 
 /* Flexbox stuff from lynda.com */
-@media screen and (min-width: 40em) {
+
     .cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: -1em;
+        justify-content: center;
+        margin-top: 20px;
         width: 1000px;
     }
 
     .card {
         display: flex;
-        flex: 0 1 calc(50% - .5em);
-        margin-bottom: 1em;
+        /* justify-content: center; */
+        width: 300px;
+        margin: 10px 15px 10px 15px;
     }
-}
 
-@media screen and (min-width: 60em) {
+
+/* @media screen and (min-width: 60em) {
     .cards {
         margin-top: inherit;
     }
@@ -125,4 +105,4 @@ body {
         flex: 0 1 calc(33% - 1em);
         margin-bottom: 2em;
     }
-}
+} */

@@ -72,6 +72,15 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   width: 1000px;
+  margin: 100px 0;
+}
+.month h2 {
+  margin: 40px 0 0 0;
+  padding: .5em 0;
+}
+.month h4 {
+  margin: 0;
+  padding: .5em 0;
 }
 
 /* Working on card styles */
@@ -94,7 +103,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 10px;
         width: 1000px;
     }
 

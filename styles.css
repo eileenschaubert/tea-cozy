@@ -26,7 +26,7 @@
 	text-decoration: underline;
 	padding: .6em 1em;
 }
-/* change background-color back to black */
+
 body {
   font-family: Helvetica;
   font-size: 22px;
@@ -42,21 +42,30 @@ body {
   text-align: center;
   margin: 69px auto 0 auto;
 }
-/* add black background to text; center vertically */
-/* stretch background image to full size */
-/* should I grab image in html vs css? */
+
 .mission {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  justify-content: center;
   background: url("./images/img-mission-background.jpg");
   background-repeat: no-repeat;
-  /* background-size: 1200px 700px; */
-  /* background-position: center center; */
   height: 700px;
   width: 1200px;
 }
-
+.mission h2 {
+  margin: 0;
+  padding: .5em 0;
+  display: block;
+  width: 100%;
+  background-color: black;
+}
+.mission h4 {
+  margin: 0;
+  padding: .5em 0;
+  display: block;
+  width: 100%;
+  background-color: black;
+}
 /* Tea of the Month section */
 .month {
   display: flex;
@@ -125,11 +134,11 @@ address {
   font-style: normal;
   line-height: 3em;
 }
+
 /* Footer Styles */
 footer {
   height: 250px;
   width: 100%;
-
 }
 .copyright {
   padding-left: 20px;

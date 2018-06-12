@@ -1,7 +1,5 @@
 
-/* other examples make li ==> a <anchor> with href of # */
-/* would make items blocks and might provide padding */
-
+/*header area */
 .banner {
   display: flex;
   flex-wrap: wrap;
@@ -9,10 +7,10 @@
   align-items: center;
   height: 69px;
   background-color: black;
+  border-bottom: 1px solid seashell;
   position: fixed;
   top: 0px;
   width: 100%;
-  border-bottom: 1px; solid seashell;
 }
 .logo {
   height: 50px;
@@ -22,27 +20,32 @@
   display: flex;
 	list-style-type: none;
 }
-.menu li {
+.menu li a {
+  color: seashell;
 	text-decoration: underline;
 	padding: .6em 1em;
 }
 
+/* main page styles */
 body {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
   opacity: 0.9;
+  margin: 0;
 }
 
+/* flex container to center items on page */
 .centered {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 69px auto 0 auto;
+  margin-top: 69px;
 }
 
+/* Mission statement over image */
 .mission {
   display: flex;
   flex-direction: column;
@@ -52,20 +55,14 @@ body {
   height: 700px;
   width: 1200px;
 }
-.mission h2 {
+.mission h2, .mission h4 {
   margin: 0;
   padding: .5em 0;
   display: block;
   width: 100%;
   background-color: black;
 }
-.mission h4 {
-  margin: 0;
-  padding: .5em 0;
-  display: block;
-  width: 100%;
-  background-color: black;
-}
+
 /* Tea of the Month section */
 .month {
   display: flex;
@@ -83,58 +80,49 @@ body {
   padding: .5em 0;
 }
 
-/* Working on card styles */
-
+/* Card styles within Tea of the Month Section */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    width: 1000px;
+}
+.card {
+    display: flex;
+    width: 300px;
+    margin: 10px 15px 10px 15px;
+}
 .card a {
   color: seashell;
 	text-decoration: none;
-  /* margin: 0; */
 }
 
 /* can't get the images to fit within the card - shouldn't have to hard set size */
 .thumbnail img {
   height: 200px;
-  width: 300px;
 }
-
-/* Flexbox stuff from lynda.com */
-
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 10px;
-        width: 1000px;
-    }
-
-    .card {
-        display: flex;
-        /* justify-content: center; */
-        width: 300px;
-        margin: 10px 15px 10px 15px;
-    }
 
 /* Location Styling */
 .locations {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   background: url("./images/img-locations-background.jpg");
   height: 500px;
   width: 1200px;
   background-position: center center;
-
 }
 .locations h2 {
   width: 100%;
+  margin: 0;
   vertical-align: bottom;
 }
 .location {
   margin: 15px; 20px;
-  /* flex: 1; */
   background-color: black;
   opacity: 1;
-  border: 1px solid red;
   height: 300px;
   width: 300px;
 }
